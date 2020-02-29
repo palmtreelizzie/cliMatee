@@ -49,7 +49,12 @@ a {
     color: inherit;
     text-decoration: none;
 }
-  
+
+img {
+max-width: 100%;
+  height: auto;
+}
+
 header {
     animation: bgFadeIn 1s ease-in both;
     position: absolute;
@@ -154,27 +159,16 @@ header nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-header nav ul li a:hover {
-    color: #0a02a6;/*color A*/
-    background: ;/*color B*/
-}
   
-header nav ul li a.active {
-    background: ;/*color B*/
-}
-  
-.menu-toggle {
-    color: #0a02a6;/*color A*/
+header nav ul li a.active,
+header nav ul li a:hover, {
+    background: #F71B1B;/*color B*/
+    color: #F71B1B;/*color A*/
     float: right;
     line-height: 70px;
     font-size: 1.65rem;
     cursor: pointer;
     display: none;
-}
-
-header nav ul li a.active {
-    background: ;/*color B*/
 }
 
 header nav ul li a:before {
@@ -184,7 +178,7 @@ header nav ul li a:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: ;/*COLOR-c*/
+    background: #F71B1B;/*COLOR-c*/
     transform-origin: right;
     z-index: -1;
     transform: scaleX(0);
