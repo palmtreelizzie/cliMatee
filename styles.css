@@ -115,23 +115,14 @@ header::before {
   background: #089EAD; /*COLOR-change blue*/
 }
 
-header nav .brandS,
-header nav .brandL {
-  float: left;
-  height: 100%;
-  line-height: 100px;
-}
-
-header nav .brandS h2,
-header nav .brandL h2 {
-  margin: 0;
-  padding: 0;
-  color: rgb(250, 218, 221); /*COLOR-pink*/
-  font-weight: bold;
-}
-
 header nav ul li.active ul {
   position: relative;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 0;
 }
 
 header nav {
@@ -149,7 +140,7 @@ header nav {
     0,
     0.2
   ); /*COLOR-transparent*/ /*how dark the transparent bar thing is*/
-  padding: 0 55px 0 70px; /*distance on left and right sides of top bar*/
+  padding: 0 30px 0 30px; /*distance on left and right sides of top bar*/
   box-sizing: border-box;
   transition: 0.3s all;
 }
