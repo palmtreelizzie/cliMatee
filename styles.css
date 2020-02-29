@@ -115,14 +115,10 @@ header::before {
   background: #089EAD; /*COLOR-change blue*/
 }
 
-header nav ul li.active ul {
-  position: relative;
-}
-
 img {
   margin-top: 10px;
   margin-bottom: 10px;
-  left: 0;
+  float: left;
 }
 
 header nav {
