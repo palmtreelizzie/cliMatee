@@ -68,10 +68,7 @@ header {
     padding: 0;
     color: black;
     margin: 0;
-}
-  
-header {
-    background: linear-gradient(rgba(0,235,235, 0.7), rgba(0,235,235, 0.7)), url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg?w=1155&h=1541");
+    background: linear-gradient(rgba(0,235,235, 0.7), rgba(0,235,235, 0.7)), url("https://img.favpng.com/13/20/13/earth-drawing-planet-clip-art-png-favpng-T9WXtyZVSAG3FRvptXyrhKnNg.jpg");
     width: 100%;
     height: auto;
     background-attachment: fixed;
@@ -83,10 +80,8 @@ header {
     background-size: cover;
     bottom: 0;
     content: ' ';
-    left: 0;
     position: absolute;
     right: 0;
-    top: 0;
     z-index: -1;
 }
 
@@ -112,7 +107,7 @@ header nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 90px;
     background: rgba(0, 0, 0, 0.2);
     padding: 0 55px 0 70px;
     box-sizing: border-box;
@@ -161,8 +156,8 @@ header nav ul li a {
   
 header nav ul li a.active,
 header nav ul li a:hover, {
-    background: #F71B1B;/*color B*/
-    color: #F71B1B;/*color A*/
+    background: #4affc3;/*color B*/
+    color: #4affc3;/*color A*/
     float: right;
     line-height: 70px;
     font-size: 1.65rem;
@@ -177,7 +172,7 @@ header nav ul li a:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #F71B1B;/*COLOR-c*/
+    background: #4affc3;/*COLOR-c*/
     transform-origin: right;
     z-index: -1;
     transform: scaleX(0);
@@ -192,4 +187,19 @@ header nav ul li a:hover:before {
 p/*individual green space*/ {
     padding-top: 10px;/*green thing before text*/
     padding-bottom: 10px;/*green thing after text*/
+}
+
+section .sectionclass {
+    margin: 0 100px 0 100px;
+    text-align: center;
+    color: #000;
+}
+
+section.sec0 {
+    margin-top: 700px;
+    padding-top: 50px;
+}
+
+.changeColor {
+    background: #089EAD;/*COLOR E - when you scroll down, it makes the navigation bar change colors*/
 }

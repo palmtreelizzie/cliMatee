@@ -1,5 +1,14 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-// prints "hi" in the browser's dev tools console
-console.log("hi");
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            $('nav').addClass('changeColor')
+            $('nav ul li').addClass('changeColor')
+            $('nav ul li ul').addClass('changeColor')
+        }
+        if ($(this).scrollTop() < 1) {
+            $('nav').removeClass('changeColor')
+            $('nav ul li').removeClass('changeColor')
+            $('nav ul li ul').removeClass('changeColor')
+        }
+    })
+})
