@@ -66,7 +66,7 @@ header {
 }
   
 header::before {
-    background: linear-gradient(rgba(0,235,235, 0.7), rgba(0,235,235, 0.7))/*COLOR-picture blue*//*blue color of the picture*/, url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg?w=1155&h=1541");
+    background: linear-gradient(rgba(0,235,235, 0.7), rgba(0,235,235, 0.7)), url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg?w=1155&h=1541");
     width: 100%;
     height: auto;
     background-attachment: fixed;
@@ -85,43 +85,31 @@ header::before {
     z-index: -1;
 }
 
-@keyframes bgFadeIn {
-    0% {
-        background-color: white;
-    }
-    100% {
-        background-color: black;
-    }
-}
-
 header nav .WebsiteName,
 header nav .WebsiteName {
-    
+    float: left;
+    height: 100%;
+    line-height: 70px;
 }
 
-header nav .brandS h2,
-header nav .brandL h2 {
+header nav .WebsiteName h2 {
     margin: 0;
     padding: 0;
-    color: rgb(250, 218, 221);/*COLOR-pink*/
+    color: ;/*COLOR A*/
     font-weight: bold;
-}
-
-header nav ul li.active ul {
-    position: relative;
 }
 
 header nav {
     float: right;
     position: fixed;
-    font-size: 1.65rem;/*mainly size of the Girl Scouts Gold Award Project text*/
-    font-family: "Josefin Sans", cursive;/*everything except name of project*/
+    font-size: 1.65rem;
+    font-family: "", cursive;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;/*how tall the transparent bar thing is*/
-    background: rgba(0, 0, 0, 0.2);/*COLOR-transparent*//*how dark the transparent bar thing is*/
-    padding: 0 55px 0 70px;/*distance on left and right sides of top bar*/
+    height: 70px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 55px 0 70px;
     box-sizing: border-box;
     transition: 0.3s all;
 }
@@ -130,8 +118,8 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: "Josefin Sans", cursive;
-    font-size: 1.65rem;/*size of the category text on nav bar*/
+    font-family: "", cursive;
+    font-size: 1.65rem;
     float: right;
 }
   
@@ -143,13 +131,8 @@ header nav ul li {
 header nav ul li.sub-menu:before {
     position: absolute;
     line-height: 50px;
-    color: rgb(250, 218, 221);
+    color: ;/*color A*/
     right: 1px;
-}
-
-header nav ul li.active ul {
-    /* use li: hover instead */
-    display: block;
 }
   
 header nav ul li ul li {
@@ -164,31 +147,25 @@ header nav ul li a {
     text-align: center;
     height: 70px;
     line-height: 70px;
-    padding: 0 30px 33px 30px;/*left and right of appearing blue box*/
+    padding: 0 30px 33px 30px;
     box-sizing: border-box;
-    color: rgb(250, 218, 221);/*COLOR-pink*/
+    color: ;/*COLOR A*/
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-header nav ul li ul li a {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
 header nav ul li a:hover {
-    color: rgb(250, 218, 221);
-    background: #21295C;
+    color: ;/*color A*/
+    background: ;/*color B*/
 }
   
 header nav ul li a.active {
-    background: #21295C;
+    background: ;/*color B*/
 }
   
 .menu-toggle {
-    color: rgb(250, 218, 221);
+    color: ;/*color A*/
     float: right;
     line-height: 70px;
     font-size: 1.65rem;
@@ -196,39 +173,8 @@ header nav ul li a.active {
     display: none;
 }
 
-header nav ul li.active ul {
-    display: block;
-}
-
 header nav ul li a.active {
-    background: #21295C;
-}
-
-header nav ul li ul {
-    left: 0;
-    font-size: 1.35rem;/*size of the SUB-category text on nav bar*/
-    display: block;
-    background: rgba(0, 0, 0, 0.2);/*COLOR-transparent*/
-    min-width: 200px;/*width of the SUB-category text box*/
-    position: absolute;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0);/*COLOR-black*/
-    opacity: 0;
-    visibility: hidden;
-    transition: .5s;
-    transform: translateY(40px);
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li:hover ul /*hovering on a or the link*/{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0px);
-}
-
-header nav ul li ul li a {
-    padding: 0;
-    margin: 0;
+    background: ;/*color B*/
 }
 
 header nav ul li a:before {
@@ -238,7 +184,7 @@ header nav ul li a:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #21295C;/*COLOR-blurple*//*hovering highlight color*/
+    background: ;/*COLOR-c*/
     transform-origin: right;
     z-index: -1;
     transform: scaleX(0);
@@ -253,75 +199,4 @@ header nav ul li a:hover:before {
 p/*individual green space*/ {
     padding-top: 10px;/*green thing before text*/
     padding-bottom: 10px;/*green thing after text*/
-}
-
-/*------------------------------------------------------*/
-/*SECTIONS AFTER HEADER STUFF*/
-/*------------------------------------------------------*/
-
-section {
-    text-align: center;
-}
-
-section .container /*text in the body*/ {
-    margin: 0 100px 0 100px;/*value order: top right bottom left*/
-    text-align: center;
-    color: #000;
-}
-
-section.sec0 {
-    /*margin of all home screen text*/
-    margin-top: 700px;
-}
-
-section.sec0 p,
-section.sec1 p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    text-align: left;
-    color: black;
-
-}
-section.sec0 p.lead-in,
-section.sec1 p.lead-in {
-    font-size: 2.5rem;
-}
-
-section.sec0 p.lead-in:first-letter,
-section.sec1 p.lead-in:first-letter {
-    font-size: 7.25rem;
-    display: block;
-    float: left;
-    position: relative;
-    line-height: 0.1;
-    top: -0.2em;
-}
-
-.sectionheader {
-    background: rgb(0,174,88);
-    color: black;
-    font-family: 'Josefin Sans', cursive;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px 0 20px 100px;
-    font-size: 10rem;
-    width: 100%;
-}
-
-section.sec0 p.question,
-section.sec1 p.question {
-    font-weight: bold;
-    font-size: 23px;
-}
-
-section.sec0 p.answer,
-section.sec1 p.answer {
-
-}
-
-section.seclast {
-    width: 100%;
-    height: 50vh;
-    box-sizing: border-box;
-    background: #089EAD;/*COLOR-change blue*/
 }
