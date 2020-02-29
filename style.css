@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
 * {
     box-sizing: border-box;
 }
@@ -13,13 +15,13 @@ header h1 {
     border-bottom: 3.5px solid #0a02a6;/*COLOR A*/
     border-top: 3.5px solid #0a02a6;/*COLOR A*/
     color: #0a02a6;/*COLOR A*/
-    font-family: "", fantasy;
-    font-size: 5.75em;
+    font-family: "Josefin Sans", fantasy;
+    font-size: 3.75em;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: 4.75em;
+    margin-top: 6.75em;
     margin-bottom: 3.5em;
     padding: 10px;
     width: 98%;
@@ -102,7 +104,7 @@ header nav .WebsiteName h2 {
 header nav {
     float: right;
     position: fixed;
-    font-size: 2.35rem;
+    font-size: 2.15rem;
     font-family: "", fantasy;
     top: 0;
     left: 0;
@@ -119,7 +121,7 @@ header nav ul {
     padding: 0;
     display: flex;
     font-family: "", fantasy;
-    font-size: 2.35rem;
+    font-size: 2.15rem;
     float: right;
 }
   
@@ -160,7 +162,7 @@ header nav ul li a:hover, {
     color: #4affc3;/*color A*/
     float: right;
     line-height: 90px;
-    font-size: 2.35rem;
+    font-size: 2.15rem;
     cursor: pointer;
     display: none;
 }
@@ -198,8 +200,9 @@ section .sectionclass {
 section.sec0 {
     margin-top: 700px;
     padding-top: 50px;
+    font-size: 30px;
 }
 
 .changeColor {
-    background: #089EAD;/*COLOR E - when you scroll down, it makes the navigation bar change colors*/
+    background: #8c3a72;/*COLOR E - when you scroll down, it makes the navigation bar change colors*/
 }
