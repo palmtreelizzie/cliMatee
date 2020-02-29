@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/*DRY: don't repeat yourself - if h2 and p both have margins of 0 and margin-bottom of 20px...
+h2,
+p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*the period signifies that it's a class (within header)*/
+header .container /*Name of Project w border*/ {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%; /*how wide the Name of Project stretches*/
+}
+
+header h1 {
+  border-bottom: 3.5px solid rgb(250, 218, 221); /*COLOR-pink*/
+  border-top: 3.5px solid rgb(250, 218, 221); /*COLOR-pink*/
+  color: rgb(250, 218, 221); /*COLOR-pink*/
+  font-family: "Amatic SC", cursive;
+  font-size: 5.75em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 4.75em; /*top of blue picture thing*/
+  margin-bottom: 3.5em; /*blue picture below Name of Project*/
+  padding: 10px;
+  width: 98%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+html {
+  font-family: "Josefin Sans", cursive;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 1); /*COLOR-white*/
+  align-items: center;
+  height: 100vh;
+  font-family: "Josefin Sans", cursive;
+  color: rgba(255, 255, 255, 0); /*COLOR-black*/
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  animation: bgFadeIn 1s ease-in both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px; /*how tall the Name of Project thing is, consistent w header on all other pages*/
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 0;
+  color: rgba(255, 255, 255, 0);
+  margin: 0;
+}
+
+header::before {
+  background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7))
+      /*COLOR-picture blue*/ /*blue color of the picture*/,
+    url("http://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg");
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes bgFadeIn {
+  0% {
+    background-color: rgba(255, 255, 255, 1); /*COLOR-white*/
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0); /*COLOR-black*/
+  }
+}
+
+.changeColor {
+  background: #089EAD; /*COLOR-change blue*/
+}
+
+header nav .brandS,
+header nav .brandL {
+  float: left;
+  height: 100%;
+  line-height: 70px;
+}
+
+header nav .brandS h2,
+header nav .brandL h2 {
+  margin: 0;
+  padding: 0;
+  color: rgb(250, 218, 221); /*COLOR-pink*/
+  font-weight: bold;
+}
+
+header nav ul li.active ul {
+  position: relative;
+}
+
+header nav {
+  float: right;
+  position: fixed;
+  font-size: 1.65rem; /*mainly size of the Girl Scouts Gold Award Project text*/
+  font-family: "Josefin Sans", cursive; /*everything except name of project*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /*how tall the transparent bar thing is*/
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /*COLOR-transparent*/ /*how dark the transparent bar thing is*/
+  padding: 0 55px 0 70px; /*distance on left and right sides of top bar*/
+  box-sizing: border-box;
+  transition: 0.3s all;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Josefin Sans", cursive;
+  font-size: 1.65rem; /*size of the category text on nav bar*/
+  float: right;
+}
+
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li.sub-menu:before {
+  position: absolute;
+  line-height: 50px;
+  color: rgb(250, 218, 221);
+  right: 1px;
+}
+
+header nav ul li.active ul {
+  /* use li: hover instead */
+  display: block;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px 33px 30px; /*left and right of appearing blue box*/
+  box-sizing: border-box;
+  color: rgb(250, 218, 221); /*COLOR-pink*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header nav ul li ul li a {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  color: rgb(250, 218, 221);
+  background: #21295C;
+}
+
+header nav ul li a.active {
+  background: #21295C;
+}
+
+.menu-toggle {
+  color: rgb(250, 218, 221);
+  float: right;
+  line-height: 70px;
+  font-size: 1.65rem;
+  cursor: pointer;
+  display: none;
+}
+
+header nav ul li.active ul {
+  display: block;
+}
+
+header nav ul li ul {
+  left: 0;
+  font-size: 1.35rem; /*size of the SUB-category text on nav bar*/
+  display: block;
+  background: rgba(0, 0, 0, 0.2); /*COLOR-transparent*/
+  min-width: 200px; /*width of the SUB-category text box*/
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0); /*COLOR-black*/
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateY(40px);
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li:hover ul /*hovering on a or the link*/ {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+header nav ul li ul li a {
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #21295C; /*COLOR-blurple*/ /*hovering highlight color*/
+  transform-origin: right;
+  z-index: -1;
+  transform: scaleX(0);
+}
+
+header nav ul li a:hover:before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+
+p/*individual green space*/ {
+  padding-top: 10px; /*green thing before text*/
+  padding-bottom: 10px; /*green thing after text*/
+}
+
+section {
+  text-align: center;
+}
+
+section .container  {
+  margin: 0 100px 0 100px;
+  text-align: center;
+  color: #000;
+}
+
+section.sec0 {
+  margin-top: 700px;
+  padding-top: 50px;
+}
+
+section.sec0 p {,
+section.sec1 p {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  text-align: left;
+  color: black;
+}
