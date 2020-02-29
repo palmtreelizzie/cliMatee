@@ -71,6 +71,7 @@ header {
     color: black;
     margin: 0;
     background: linear-gradient(rgba(0,235,235, 0.7), rgba(0,235,235, 0.7)), url("https://img.favpng.com/13/20/13/earth-drawing-planet-clip-art-png-favpng-T9WXtyZVSAG3FRvptXyrhKnNg.jpg");
+    background image: url("https://img.favpng.com/13/20/13/earth-drawing-planet-clip-art-png-favpng-T9WXtyZVSAG3FRvptXyrhKnNg.jpg");
     width: 100%;
     height: auto;
     background-attachment: fixed;
@@ -144,7 +145,7 @@ header nav ul li a {
     line-height: 90px;
     padding: 0 30px 33px 30px;
     box-sizing: border-box;
-    color: #0a02a6;/*COLOR A*/
+    color: black;/*COLOR A*/
     text-transform: uppercase;
     font-weight: bold;
 }
