@@ -39,7 +39,7 @@
       </nav>
       <div class="container">
         <h1>
-          Hi, welcome to cliMate, where everything you need to know to help the earth is at the tip of your fingers! I'm your cliMate, let's get started.
+          Hi, welcome to cliMate, where everything you need to know to help the earth is at your fingertips! I'm your cliMate, let's get started.
         </h1>
         
       </div>
@@ -66,16 +66,27 @@
     </section>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script>
-    $(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 1) {
-          $("header nav").addClass("changeColor");
-        }
-        if ($(this).scrollTop() < 1) {
-          $("header nav").removeClass("changeColor");
-        }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <script>
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 1) {
+            $("header nav").addClass("changeColor");
+          }
+          if ($(this).scrollTop() < 1) {
+            $("header nav").removeClass("changeColor");
+          }
+        });
       });
-    });
-  </script>
+      window.onclick = function(e)
+      {   var id =  e.target.id;   
+         if (id === 'sent')  
+         { var txtbox = document.getElementById('example');  
+           var txt = txtbox.value;
+           $( "#para" ).append( txt + '<br>');
+           $( txtbox ).val('');  
+         }
+      }
+    </script>
 </html>
