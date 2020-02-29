@@ -34,14 +34,80 @@
         </h1>
       </div>
     </header>
-    <section class="sec0">
-        <div class="sectionclass">
-          <form action=”” method=”post”>
-            <textarea name=”comment”></textarea><br>
-            <input type=”submit” value=”comment”>
-          </form>
-        </div>
-        <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=FsFOcnciCMU#gsc.tab=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="section0">
+
+<body>
+
+<div class=“content”>
+
+<div class=“comments”>
+  &lt;div class="editor"&gt;
+
+  &lt;div class="editor-header"&gt;
+
+    &lt;a href='#' data-role='bold'&gt;B&lt;/a&gt;
+
+    &lt;a href='#' data-role='italic'&gt;I&lt;/a&gt;
+
+    &lt;a href='#' data-role='underline'&gt;U&lt;/a&gt;
+
+    &lt;a href='#' data-role='justifyleft'&gt;&lt;i class="menu-left"&gt;&lt;/i&gt;&lt;/a&gt;
+
+    &lt;a href='#' data-role='justifycenter'&gt;&lt;i class="menu-center"&gt;&lt;/i&gt;&lt;/a&gt;
+
+    &lt;a href='#' data-role='justifyright'&gt;&lt;i class="menu-right"&gt;&lt;/i&gt;&lt;/a&gt;
+
+  &lt;/div&gt;
+
+  &lt;div id="text" class="editor-content" contenteditable&gt;
+
+    &lt;p&gt;Let's make a statement!&lt;/p&gt;
+
+    &lt;p&gt;This is an italicised sentence.&lt;/p&gt;
+
+    &lt;p&gt;Very important information.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="insert-text"&gt;
+
+  &lt;span class="loading"&gt;Loading...&lt;/span&gt;
+
+  &lt;span class="total-comment"&gt;&lt;/span&gt;
+
+  &lt;p&gt;
+
+    &lt;input type="submit" value="Comment" /&gt;
+
+  &lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class="list-comments"&gt;
+
+  &lt;div&gt;Hello!&lt;/div&gt;
+
+  &lt;div&gt;My name's Tuan Linh.&lt;/div&gt;
+
+&lt;/div&gt;
+  </div>
+
+</div>
     </section>
   </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1) {
+          $("header nav").addClass("changeColor");
+        }
+        if ($(this).scrollTop() < 1) {
+          $("header nav").removeClass("changeColor");
+        }
+      });
+    });
+  </script>
 </html>
