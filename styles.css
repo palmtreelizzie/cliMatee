@@ -5,23 +5,15 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-/*DRY: don't repeat yourself - if h2 and p both have margins of 0 and margin-bottom of 20px...
-h2,
-p {
-    margin: 0;
-    margin-bottom: 20px;
-}
-*/
-
 * {
   box-sizing: border-box;
 }
 
-/*the period signifies that it's a class (within header)*/
-header .container /*Name of Project w border*/ {
+
+header .container{
   margin: 0 auto;
   text-align: center;
-  width: 60%; /*how wide the Name of Project stretches*/
+  width: 60%;
 }
 
 h2 {
@@ -117,19 +109,19 @@ header::before {
 
 @keyframes bgFadeIn {
   0% {
-    background-color: rgba(255, 255, 255, 1); /*COLOR-white*/
+    background-color: rgba(255, 255, 255, 1);
   }
   100% {
-    background-color: rgba(255, 255, 255, 0); /*COLOR-black*/
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
 .changeColor {
-  background: #089EAD; /*COLOR-change blue*/
+  background: #089EAD;
 }
 
 img {
-  margin-top: 120px;
+  margin-top: 40px;
   margin-bottom: 100px;
   float: middle;
 }
@@ -230,7 +222,7 @@ header nav ul li a:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #21295C; /*COLOR-blurple*/ /*hovering highlight color*/
+  background: #21295C;
   transform-origin: right;
   z-index: -1;
   transform: scaleX(0);
@@ -242,9 +234,9 @@ header nav ul li a:hover:before {
   transition: transform 0.5s;
 }
 
-p/*individual green space*/ {
-  padding-top: 10px; /*green thing before text*/
-  padding-bottom: 10px; /*green thing after text*/
+p{
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
 section {
@@ -263,13 +255,13 @@ section .container {
 }
 
 section.sec0 {
-  margin-top: 230px;
-  padding-top: 80pxadd
+  margin-top: 85px;
+  padding-top: 80px;
 
 section.sec0 img {
   margin: 100px;
+  margin-top: 0;
   align: center;
-}lack;
 }
 
 button {
@@ -277,5 +269,7 @@ button {
   padding: 10px 10px;
   width: 250px;
   height: 100px;
-  background-color: rgb(250, 218, 221)
+  background-color: rgb(250, 218, 221);
+  padding-bottom: 100px;
+  margin: 30px;
 }
