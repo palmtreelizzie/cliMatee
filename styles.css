@@ -1,14 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
-@import url(https://fonts.googleapis.com/css?family=Nunito);
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
   box-sizing: border-box;
 }
-
 
 header .container{
   margin: 0 auto;
@@ -74,11 +70,11 @@ a {
 }
 
 header {
-  animation: bgFadeIn 1s ease-in both;
   position: absolute;
   top: 0;
   left: 0;
   height: 700px;
+  animation: bgFadeIn 1s ease-in both;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -95,7 +91,7 @@ header::before {
   background-position: center center;
   background-size: cover;
   bottom: 0;
-  content; ""
+  content: "";
   left: 0;
   position: absolute;
   right: 0;
