@@ -22,6 +22,7 @@ h2 {
   color: black;
   margin-right: 75px;
   margin-left: 75px;
+  margin-top: 6.5em;
 }
 
 h3 {
@@ -91,15 +92,10 @@ header::before {
     url("http://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg");
   width: 100%;
   height: auto;
-  background-attachment: fixed;
   background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   bottom: 0;
-  content: " ";
+  content; ""
   left: 0;
   position: absolute;
   right: 0;
@@ -177,7 +173,6 @@ header nav ul li a {
   padding: 0 30px 33px 30px;
   box-sizing: border-box;
   color: rgb(250, 218, 221);
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -254,6 +249,7 @@ button {
   padding-bottom: 60px;
   margin: 30px;
   text-align: center;
+  font-family: "Josefin Sans", cursive;
 }
 
 .comment {

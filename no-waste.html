@@ -58,10 +58,10 @@
         <div>
           <h2>
             One of the main causes of the climate crisis is the immense amount
-            of landfill. Use our generator below to find ways you can reuse,
+            of landfill that is often burned, causing even more carbon emissions. Use our generator below to find ways you can reuse,
             reduce, and recycle! 👇
           </h2>
-          <p id="generator" style="font-size: 150px; color: black;"></p>
+          <p id="generator" style="margin: 0; margin-top: 90px; font-size: 40px; color: black;"></p>
           <button id="button" onclick="generate()">
             Generate!
           </button>
@@ -72,13 +72,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script>
     var waysToRecycle = ["compost food scraps", "switch to reusable containers",
-            "lower plastic use", "bring your own grocery bags/containers", "buy in bulk", "turn off appliances when not in use", "repair rather than discard", 
-                         "don't buy single serving"];
-    
-    $(function generate() {
-        var randomItem = waysToRecycle[Math.floor(Math.random()*waysToRecycle.length)];
-        generator.innerHTML = randomItem;
-    });
+            "lower plastic use", "bring your own grocery bags/containers", "buy in bulk", 
+                         "repair rather than discard", "don't buy single serving"];
+    function generate() {
+        generator.innerHTML = waysToRecycle[Math.floor(Math.random()*waysToRecycle.length)];
+    }
   </script>
   <script>
     $(function() {
