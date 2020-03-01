@@ -132,9 +132,9 @@ header::before {
 }
 
 img {
-  margin-top: 130px;
-  margin-bottom: 10px;
-  float: left;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  float: middle;
 }
 
 header nav {
@@ -260,7 +260,7 @@ section .container {
   color: black;
 }
 
-img {
+.logo img {
   margin: 10px 0 10px 20px;
   align: left;
 }
@@ -269,6 +269,11 @@ section.sec0 {
   margin-top: 230px;
   padding-top: 80pxaddinsection.comment {
   color: black;
+}
+
+section.sec0 img {
+  margin: 100px;
+  align: center;
 }lack;
 }
 
