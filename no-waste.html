@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <script>
-(function() {
-var id = '12213b4a-5b41-11ea-a69b-0242ac130002';
-var ci_search = document.createElement('script');
-ci_search.type = 'text/javascript';
-ci_search.async = true;
-ci_search.src = 'https://cse.expertrec.com/api/js/ci_common.js?id=' + id;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(ci_search, s);
-})();
-</script>
-
+      (function() {
+        var id = "12213b4a-5b41-11ea-a69b-0242ac130002";
+        var ci_search = document.createElement("script");
+        ci_search.type = "text/javascript";
+        ci_search.async = true;
+        ci_search.src =
+          "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ci_search, s);
+      })();
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,7 +42,7 @@ s.parentNode.insertBefore(ci_search, s);
               class="resize"
               src="https://cdn.glitch.com/be2f8006-2581-4a14-98f1-1ff1c09b6e98%2Flogo.png?v=1583018978626"
               alt="HTML tutorial"
-                 align="left"
+              align="left"
               height="80"
               width="65"
             />
@@ -53,36 +53,32 @@ s.parentNode.insertBefore(ci_search, s);
         <h1>
           Welcome to noWaste!
         </h1>
-        
       </div>
-        <section class="sec0">
-          <div>
-        <h2>
-          One of the main causes of the climate crisis is the immense amount of landfill. Use our generator
-          below to find ways you can reuse, reduce, and recycle! 👇
-        </h2>
-            <p id = "generator" style="font-size: 150px; color: black;">  
-    </p> 
-       <button id="button" onclick="generate()">
-         Generate!
-            </button>
-      </div>
-        </section>
+      <section class="sec0">
+        <div>
+          <h2>
+            One of the main causes of the climate crisis is the immense amount
+            of landfill. Use our generator below to find ways you can reuse,
+            reduce, and recycle! 👇
+          </h2>
+          <p id="generator" style="font-size: 150px; color: black;"></p>
+          <button id="button" onclick="generate()">
+            Generate!
+          </button>
+        </div>
+      </section>
     </header>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script>
-      var generate = document.getElementById('generator');  
-
-      var waysToRecycle = ["compost food scraps", "switch to reusable containers"  
-              "lower plastic use", "bring your own grocery bags", "eat leftovers sometimes", "turn off appliances when not in use"]; 
-
-      function random(mn, mx) {  
-          return Math.random() * (mx - mn) + mn;  
-      }  
-      function generate() { 
-          generator.innerHTML = waysToRecycle[Math.floor(random(1, 7))-1]; 
-      }
+    var waysToRecycle = ["compost food scraps", "switch to reusable containers",
+            "lower plastic use", "bring your own grocery bags/containers", "buy in bulk", "turn off appliances when not in use", "repair rather than discard", 
+                         "don't buy single serving"];
+    
+    $(function generate() {
+        var randomItem = waysToRecycle[Math.floor(Math.random()*waysToRecycle.length)];
+        generator.innerHTML = randomItem;
+    });
   </script>
   <script>
     $(function() {
