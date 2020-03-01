@@ -167,15 +167,6 @@ header nav ul li.sub-menu:before {
   right: 1px;
 }
 
-header nav ul li.active ul {
-  display: block;
-}
-
-header nav ul li ul li {
-  display: block;
-  width: 100%;
-}
-
 header nav ul li a {
   text-decoration: none;
   display: block;
@@ -189,12 +180,6 @@ header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-header nav ul li ul li a {
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
 header nav ul li a:hover {
@@ -254,10 +239,6 @@ section .container {
   align: left;
 }
 
-section.sec0 {
-  margin-top: 85px;
-  padding-top: 80px;
-
 section.sec0 img {
   margin: 100px;
   margin-top: 0;
@@ -268,8 +249,9 @@ button {
   border-radius: 10px;
   padding: 10px 10px;
   width: 250px;
-  height: 100px;
+  height: 60px;
   background-color: rgb(250, 218, 221);
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   margin: 30px;
+  text-align: center;
 }
