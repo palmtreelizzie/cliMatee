@@ -11,18 +11,10 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script>
+      
+    </script>
   </head>
-  <script>
-    (function() {
-      var id = "12213b4a-5b41-11ea-a69b-0242ac130002";
-      var ci_search = document.createElement("script");
-      ci_search.type = "text/javascript";
-      ci_search.async = true;
-      ci_search.src = "https://cse.expertrec.com/api/js/ci_common.js?id=" + id;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(ci_search, s);
-    })();
-  </script>
 
   <body>
     <header>
@@ -30,7 +22,7 @@
         <ul>
           <li class="active"><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="stats.html" class="nav-link">Statistics</a></li>
-          <li><a href="recycling.html" class="nav-link">Recycling</a></li>
+          <li><a href="recycling.html" class="nav-link">noWaste</a></li>
           <li><a href="cutdown.html" class="nav-link">CutDown</a></li>
           <li><a href="community.html" class="nav-link">Community</a></li>
         </ul>
@@ -49,16 +41,22 @@
       </nav>
       <div class="container">
         <h1>
-          Welcome to our page noWaste! One of the main causes of the climate
-          crisis is the immense amount of landfill. Every
-          bit of recycling helps, even if it's just that one sheet of paper that
-          you accidentally crinkled and were going to throw away. Use our search
-          bar below to find ways you can reuse stuff 👇
+          Welcome to noWaste!
         </h1>
-        <ci-search></ci-search>
+        
       </div>
+        <section class="sec0">
+          <div>
+        <h2>
+          One of the main causes of the climate crisis is the immense amount of landfill. Use our generator
+          below to find ways you can reuse, reduce, and recycle! 👇
+        </h2>
+        <button class="generate">
+            Generate method!
+        </button>
+      </div>
+        </section>
     </header>
-    <section class="sec0"></section>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script>

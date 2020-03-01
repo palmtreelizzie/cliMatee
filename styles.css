@@ -272,4 +272,10 @@ section.sec0 img {
 }lack;
 }
 
-.action button
+button {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 250px;
+  height: 100px;
+  background-color: rgb(250, 218, 221)
+}
