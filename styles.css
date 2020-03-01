@@ -24,6 +24,17 @@ header .container /*Name of Project w border*/ {
   width: 60%; /*how wide the Name of Project stretches*/
 }
 
+h2 {
+  text-align: center;
+  font-size: 3.8em;
+}
+
+h3 {
+  text-align: left;
+  font-size: 2em;
+  color: black;
+}
+
 header h1 {
   border-bottom: 3.5px solid rgb(250, 218, 221); /*COLOR-pink*/
   border-top: 3.5px solid rgb(250, 218, 221); /*COLOR-pink*/
@@ -257,3 +268,5 @@ section.sec1 p {
   text-align: left;
   color: black;
 }
+
+  
