@@ -24,20 +24,6 @@ s.parentNode.insertBefore(ci_search, s);
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <script>
-        var down = document.getElementById('GFG_DOWN');  
-          
-        var waysToRecycle = ["compost food scraps", "switch to reusable containers"  
-                "lower plastic use", "bring your own grocery bags", "", "", "turn off appliances when not in use"]; 
-          
-        function random(mn, mx) {  
-            return Math.random() * (mx - mn) + mn;  
-        }  
-          
-        function GFG_Fun() { 
-            down.innerHTML = arr[Math.floor(random(1, 5))-1]; 
-        }
-    </script>
   </head>
 
   <body>
@@ -75,15 +61,29 @@ s.parentNode.insertBefore(ci_search, s);
           One of the main causes of the climate crisis is the immense amount of landfill. Use our generator
           below to find ways you can reuse, reduce, and recycle! 👇
         </h2>
-            <p id = "GFG_DOWN" style =  
-        "font-size: 24px; font-weight: bold; color: green;">  
+            <p id = "generator" style="font-size: 150px; color: black;">  
     </p> 
-       <ci-search></ci-search>
+       <button id="button" onclick="generate()">
+         Generate!
+            </button>
       </div>
         </section>
     </header>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+      var generate = document.getElementById('generator');  
+
+      var waysToRecycle = ["compost food scraps", "switch to reusable containers"  
+              "lower plastic use", "bring your own grocery bags", "eat leftovers sometimes", "turn off appliances when not in use"]; 
+
+      function random(mn, mx) {  
+          return Math.random() * (mx - mn) + mn;  
+      }  
+      function generate() { 
+          generator.innerHTML = waysToRecycle[Math.floor(random(1, 7))-1]; 
+      }
+  </script>
   <script>
     $(function() {
       $(window).scroll(function() {
